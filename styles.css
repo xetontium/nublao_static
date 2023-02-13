@@ -1,0 +1,265 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    opacity: 0.9;
+}
+a {
+    text-decoration: none;
+}
+main {
+    position: relative;
+    top: 87px;
+}
+
+p {
+    font-family: 'Sriracha', cursive;
+    color: white;
+}
+/* Nav section*/
+
+#nav {
+    border-bottom: 1px solid grey;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 10%;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    z-index: 1;
+    
+}
+.logo {
+    display: flex;
+}
+.logo img {
+    width: 7%;
+    min-width: 54px;
+    padding: 1% 0 1% 1%;
+    align-self: center;
+}
+#nav ul {
+    display: flex;
+   list-style-type: none;
+    
+
+}
+
+#nav a {
+    text-decoration: none;
+    padding-right: 2rem;
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 2.5rem;
+    color: rgb(39 111 146);
+}
+
+@media only screen and (min-width:620px) and (max-width: 800px){
+    
+    
+        #nav a {
+        padding-right: 0.9rem;
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width:619px){
+    
+        #nav a {
+        padding-right: 10px;
+        font-size: 1rem;
+       
+    }
+
+        #nav ul {
+        padding: 0;
+    }
+}
+
+/*main section*/
+
+/*audio/video*/
+
+#music {
+    scroll-margin: 100px;
+}
+
+#music .music-cont {
+    width: 100%;
+    padding-bottom: 4%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+#music .music-cont img {
+    width: 34%;
+    height: auto;
+    max-height: 49rem;
+    display: block;
+}
+
+
+
+.buttons {
+    display: flex;
+}
+
+#music .button {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid rgb(39 111 146);
+    border-radius: 10%;
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 2.5rem;
+    color: indianred;
+    background-color: rgb(39 111 146) ;
+    box-shadow: 10px -2px 11px 7px
+
+}
+
+
+
+#music .button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px;
+    color: khaki;
+}
+
+#music .button:active {
+    color: rgb(0, 0, 0);
+    background-color: rgb(39 111 146) ;
+
+}
+
+@media only screen and (min-width:620px) and (max-width: 800px){
+    #music .button {
+        padding: 5px;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:619px) {
+        
+    #music .button {
+        padding: 5px;
+        font-size: 1rem;
+    }
+    #music .music-cont img {
+        
+        width: 39%;
+        min-width: 200px;
+    }
+
+}
+
+/*band*/
+#band {
+    scroll-margin: 100px;
+}
+
+#band .description-cont {
+    background-image: url(./resources/Nublao_IMG01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: flex-end
+    
+}
+
+#band .description-cont p {
+    color: rgb(39 111 146);
+    line-height: 1.7;
+    margin: 0px 0% 0% 0%;
+    text-indent: 4%;
+    letter-spacing: 1.3px;
+    white-space: break-spaces;
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 10px 30px;
+    height: 100%;
+    font-size: 1.5rem;
+    overflow: overlay;
+}
+
+@media only screen and (min-width:481px) and (max-width: 800px) {
+    #band .description-cont p {
+        font-size: 1rem;
+        
+
+    }
+    #band {
+        scroll-margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #band .description-cont p {
+        font-size: 1rem;
+    }
+}
+
+
+.pics-contener {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pic-name {
+    flex-basis: 280px;
+    padding: 1%;
+}
+
+.pics-contener span {
+    /*font-family: 'Sriracha', cursive;*/
+    
+    font-family: 'Sriracha', cursive;
+    font-size: 1.2rem;
+    color: rgb(39 111 146)
+
+}
+
+.pics-contener img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Footer*/
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 76px;
+    background-color: rgb(39, 111, 146);
+    width: 100%;
+    min-height: 108px;
+}
+
+
+#contact p {
+    font-family: 'Sriracha', cursive;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
