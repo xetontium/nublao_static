@@ -11,9 +11,13 @@ a {
     text-decoration: none;
 }
 main {
+
     position: relative;
-    top: 87px;
+    top: 25px;
+    
 }
+
+
 
 p {
     font-family: 'Sriracha', cursive;
@@ -28,7 +32,7 @@ p {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-height: 10%;
+    max-height: 12%;
     background-color: rgb(255, 255, 255);
     top: 0;
     z-index: 1;
@@ -58,28 +62,6 @@ p {
     color: rgb(39 111 146);
 }
 
-@media only screen and (min-width:620px) and (max-width: 800px){
-    
-    
-        #nav a {
-        padding-right: 0.9rem;
-        font-size: 2rem;
-    }
-
-}
-
-@media only screen and (max-width:619px){
-    
-        #nav a {
-        padding-right: 10px;
-        font-size: 1rem;
-       
-    }
-
-        #nav ul {
-        padding: 0;
-    }
-}
 
 /*main section*/
 
@@ -91,7 +73,9 @@ p {
 
 #music .music-cont {
     width: 100%;
-    padding-bottom: 4%;
+    position: relative;
+    top: 25px;
+    padding-bottom: 10%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -104,6 +88,7 @@ p {
 
 #music .music-cont img {
     width: 34%;
+    min-width: 420px;
     height: auto;
     max-height: 49rem;
     display: block;
@@ -142,30 +127,11 @@ p {
 
 }
 
-@media only screen and (min-width:620px) and (max-width: 800px){
-    #music .button {
-        padding: 5px;
-        font-size: 2rem;
-    }
-}
 
-@media only screen and (max-width:619px) {
-        
-    #music .button {
-        padding: 5px;
-        font-size: 1rem;
-    }
-    #music .music-cont img {
-        
-        width: 39%;
-        min-width: 200px;
-    }
-
-}
 
 /*band*/
 #band {
-    scroll-margin: 100px;
+    scroll-margin-top: 70px;
 }
 
 #band .description-cont {
@@ -193,22 +159,11 @@ p {
     overflow: overlay;
 }
 
-@media only screen and (min-width:481px) and (max-width: 800px) {
-    #band .description-cont p {
-        font-size: 1rem;
-        
+    
 
-    }
-    #band {
-        scroll-margin-top: 60px;
-    }
-}
 
-@media only screen and (max-width: 480px) {
-    #band .description-cont p {
-        font-size: 1rem;
-    }
-}
+
+
 
 
 .pics-contener {
@@ -249,8 +204,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 76px;
     background-color: rgb(39, 111, 146);
     width: 100%;
     min-height: 108px;
@@ -262,4 +215,65 @@ p {
     color: white;
     text-align: center;
     font-size: 1.5rem;
+}
+
+
+/*media queries*/
+
+@media only screen and (min-width:620px) and (max-width: 800px){
+    
+    #nav a {
+    font-size: 2rem;
+    }
+    #music .button {
+        padding: 5px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:619px) and (orientation: portrait){
+
+     #music .music-cont {
+        height: 630px;
+     }
+
+     .logo {
+        display: none;
+
+     }
+
+     #nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+     }
+
+     #nav a {
+        padding-right: 20px;
+        font-size: 1.7rem;
+     }
+     #music .button {
+        padding: 5px;
+        font-size: 2rem;
+    }
+    #music .music-cont img {               
+        min-width: 420px;
+    }
+
+    #band {
+        scroll-margin-top: 65px;
+    }
+    
+}
+
+@media only screen and (min-width:481px) and (max-width: 800px) {
+    #band .description-cont p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #band .description-cont p {
+        font-size: 1rem;
+    }
 }
